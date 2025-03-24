@@ -1,0 +1,93 @@
+.form-section {
+  padding-block: clamp(15px, 2.5vh, 20px) clamp(50px, 10vh, 150px);
+
+  .form {
+    display: flex;
+    padding: 50px;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-wrapper {
+    display: flex;
+    max-width: fit-content;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(50px);
+    background-color: #fff;
+    border-radius: 13px;
+    padding: 20px;
+    border: 1px solid rgb(0 0 0 / 10%);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 6px;
+    overflow: hidden;
+    transition: 0.2s;
+    color: #34145b;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+  }
+  
+  label {
+    opacity: 0.8;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    padding: 2px;
+    font-weight: 100;
+  }
+  
+  .radio {
+    display: flex;
+    gap: 2px;
+  }
+  .radio-label-wrapper {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .input-text {
+    background: transparent;
+    border-style: none;
+    outline: none;
+    color: #31016f;
+    padding: 4px;
+    transition: 0.4s;
+    border-bottom: #34145b 1px solid;
+  }
+  .input-text:focus {
+    border-style: none;
+    border: none;
+    background-color: rgba(0,0,0, 0.2);
+  }
+  
+  .input-wrapper {
+    width: 100%;
+    border-bottom: 2px solid #ffffff32;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .btn-sign-up {
+    margin-top: 9px;
+    cursor: pointer;
+    height: fit-content;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    background-color: #34145b;
+    color: #fff;
+    font-weight: 500;
+  }
+}

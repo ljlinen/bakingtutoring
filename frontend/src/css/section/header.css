@@ -1,0 +1,248 @@
+/*Header Section*/
+
+.header {
+  position: relative;
+  max-width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position-y: 0%;
+  background-image: linear-gradient(rgb(0 0 0 / 0%), rgba(var(--clr-font), 1)), url(../../asset/visual/img/cardImg2.jpg);
+  color: var(--clr-light);
+  backdrop-filter: blur(5px);
+  transition: all .4s ease-in-out;
+}
+
+.header-div {
+  max-width: 100%;
+  backdrop-filter: blur(2px);
+}
+
+.nav {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav ul li {
+  list-style-type: none;
+  padding: 2px 0;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-light);
+  text-transform: uppercase;
+}
+
+.logo-img {
+  color: #424243;
+  width: 160px;
+}
+.logo {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.logo-footer .logo-txt {
+  display: flex;
+  font-weight: 500;
+}
+.menu-i {
+  position: relative;
+  z-index: 9;
+}
+.menu-i-close {
+  width: 24px;
+  filter: contrast(.4);
+}
+.menu-i-close-animate {
+  animation: menu-close-anim .4s .4s ease-in;
+}
+@keyframes menu-close-anim {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.li-div {
+  padding: 6px 10px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+ 
+ .btn-call {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 12px;
+    cursor: pointer;
+    height: fit-content;
+    color: #222132;
+    /* padding: 6px 10px; */
+    border: none;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    font-size: 1.6rem;
+}
+
+.li-div p {
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.btn-call {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--clr-btn);
+  transition: .4s;
+}
+
+.btn-call:active,
+.btn-sign-up:active {
+  filter: contrast(.2);
+  scale: .99;
+  transition: .4s;
+}
+
+.nav-menu {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  background-color: var(--clr-dark);
+  z-index: 8;
+  opacity: 1;
+  transform: translateY(-100%);
+  transition: opacity .6s ease-out, transform .6s ease-out;
+}
+.nav-menu ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  font-size: 2rem;
+  opacity: 1;
+}
+
+.nav .btn-call {
+  margin: 0 40px;
+  font-weight: 100;
+  padding: 6px;
+  background-color: unset;
+  border: 2px solid #fff;
+}
+.nav-items-wrap {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.nav-items {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  gap: 30px;
+}
+
+.nav-li {
+  z-index: 6;
+}
+.nav-li-anim-wrap {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  z-index: 8;
+}
+.nav-li-anim {
+  display: flex;
+  border-bottom: 0.5px solid #fff;
+  filter: contrast(0.2);
+  width: 100%;
+  z-index: 5;
+  visibility: hidden;
+}
+.li-hover {
+  animation: nav-li .4s ease-out;
+}
+
+.text-banner {
+  margin-top: calc(50vh - (340px / 2));
+  display: flex;
+  flex-direction: column;
+}
+.text-banner .btn-call {
+  background-color: #fff;
+  color: rgb(23 26 38);
+  padding: 10px;
+  width: fit-content;
+  font-size: calc(2rem / 1.618);
+  font-weight: 900;
+  margin: 0;
+  margin-block: 20px;
+}
+.text-banner h2 {
+  text-transform: uppercase;
+  font-family: 'font-1';
+  font-size: calc(1.2rem * 1.618);
+  font-weight: 900;
+  letter-spacing: 4px;
+}
+.text-banner h1 {
+  line-height: 1;
+  letter-spacing: 9px;
+  max-width: 400px;
+  font-family: "font-2";
+  font-size: calc(2.4rem * 1.618);
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.text-banner p {
+  margin-top: 10px;
+  text-transform: lowercase;
+  max-width: 200px;
+  font-size: calc(1rem / 1.618 * 1.618 * 1.618);
+  animation: l2r-in .5s ease-in-out;
+  opacity: .8;
+  filter: none;
+}
+
+.h5 {
+  filter: contrast(0.5);
+}
+.h4 {
+  text-transform: lowercase;
+  font-size: calc(1.4rem * 1.618);
+}
+
+.desc {
+  padding: 10px 10px;
+  color: rgba(var(--clr-font), 1);
+}
+.desc h1 {
+  opacity: 0.8;
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+.desc h1 {
+  opacity: 0.8;
+  font-size: 2rem;
+  padding-bottom: 10px;
+}

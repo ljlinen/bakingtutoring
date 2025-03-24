@@ -1,0 +1,195 @@
+@font-face {
+  font-family: font-1;
+  src: url(../../asset/font/JosefinSans-Regular.ttf);
+}
+@font-face {
+  font-family: font-2;
+  src: url(../../asset/font/American\ Captain.otf);
+}
+@font-face {
+  font-family: font-3;
+  src: url(../../asset/font/Lobster\ 1.4.otf);
+}
+@font-face {
+  font-family: font-4;
+  src: url(../../asset/font/Ventography_Personal_Use_Only.ttf);
+}
+:root {
+  font-size: 62.5%;
+  --clr-light: #ffffff;
+  --clr-btn: #ffffff;
+  --clr-logo: #ffffff;
+  --unit: 1.618;
+  --clr-dark: rgb(21 24 35);
+  --clr-font: 21, 24, 35;
+}
+*, ::after, ::before {
+  user-select: none;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  font-family: font-1;
+  font-weight: 900;
+}
+
+::-webkit-scrollbar {
+  background-color: #ffffff;
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--clr-dark);
+  border: 0.1px solid #ffffff;
+}
+
+.loader-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  z-index: 999;
+  background: linear-gradient(rgb(14 18 30), rgb(47 44 64));
+  flex-direction: column;
+  color: #fff;
+  font-weight: 100;
+  font-size: 1.2rem;
+  gap: 5px;
+  transition: opacity .4s ease-out;
+  opacity: 0;
+}
+
+.loader {
+  display: inline-flex;
+  gap: 5px;
+  z-index: 9999;
+}
+
+.loader {
+  width: min-content;
+  aspect-ratio: 1;
+  background-image: url(../../asset/visual/img/output-onlinegiftools.gif);
+}
+.loader:after {
+  --s:-1;
+}
+@keyframes l5 {
+  0%   {transform:scaleX(var(--s,1)) translate(0) scale(1)}
+  33%  {transform:scaleX(var(--s,1)) translate(calc(50% + 2.5px)) scale(1)}
+  66%  {transform:scaleX(var(--s,1)) translate(calc(50% + 2.5px)) scale(2)}
+  100% {transform:scaleX(var(--s,1)) translate(0) scale(1)}
+}
+
+
+/* Reminder to lear clamp instead of media queries */
+body {
+    font-size: 1.6rem;
+    position: relative;
+}
+
+/*Global Classes*/
+
+.opacity-70 {
+  opacity: 70%;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+
+.hover-effect:hover {
+  filter: contrast(.2);
+  transition: .4s ease-out;
+}
+
+ul {
+  list-style: none;
+}
+
+/* .animate {
+  animation: 1s ease 0s 1 normal forwards slide-in-top;
+} */
+
+
+.desc p,
+.footer-content ul li,
+.footer-content-follow-us .desc .icon-desc p {
+  opacity: 0.5;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.card-arrow {
+  height: 25px;
+  opacity: .6;
+  filter: contrast(.4);
+}
+
+@keyframes nav-li {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes t2b {
+  0% {
+    opacity: 0;
+    transform: translateY(-4vh);
+  }
+  100% {
+    opacity: initial;
+    transform: translateY(0);
+  }
+}
+
+@keyframes r2l {
+  0% {
+    opacity: 50%;
+    transform: translateX(100vh);
+  }
+  100% {
+    opacity: initial;
+    transform: translateX(0);
+  }
+}
+
+@keyframes l2r-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  40% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: initial;
+    transform: translateX(0);
+  }
+}
+
+@keyframes b2r {
+  0% {
+    opacity: 50%;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: initial;
+    transform: translateY(-100%);
+  }
+}
