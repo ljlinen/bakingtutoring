@@ -38,7 +38,7 @@
       width: 100%;
     }
     .text-banner {
-      padding-left: clamp(20px, 20vw, 200px);
+      padding-left: clamp(20px, 15vw, 200px);
     }
     
     .card-banner {

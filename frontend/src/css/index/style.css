@@ -16,11 +16,13 @@
 }
 :root {
   font-size: 62.5%;
-  --clr-light: #ffffff;
+  --clr-light: #fff;
   --clr-btn: #ffffff;
   --clr-logo: #ffffff;
   --unit: 1.618;
+  --clr-accent: #606d9f;
   --clr-dark: rgb(21 24 35);
+  /* --clr-font: 100, 100, 89; */
   --clr-font: 21, 24, 35;
 }
 *, ::after, ::before {
@@ -88,6 +90,7 @@
 body {
     font-size: 1.6rem;
     position: relative;
+    background-color: var(--clr-light);
 }
 
 /*Global Classes*/
@@ -123,8 +126,8 @@ ul {
 .footer-content ul li,
 .footer-content-follow-us .desc .icon-desc p {
   opacity: 0.5;
-  color: #fff;
-  font-size: 1.5rem;
+  color: var(--clr-light);
+  font-size: 1.6rem;
 }
 
 .icon {

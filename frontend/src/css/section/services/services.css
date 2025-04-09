@@ -5,7 +5,6 @@
   width: 100%;
   display: flex;
   min-height: fit-content;
-  gap: 6px;
   position: relative;
   flex-direction: column;
   /* background-size: cover;
@@ -13,17 +12,26 @@
   background-image: linear-gradient(rgb(47 44 64), rgba(21, 25, 35, 0.705)), url(/src/img/cardImg5.jpg); */
   justify-content: center;
   align-items: center;
-  background-color: var(--clr-light);
-  padding-block: clamp(15px, 2.5vh, 20px) clamp(50px, 10vh, 150px);
+  color: var(--clr-light);
+  background-color: rgba(var(--clr-font), 1);
+  padding-block: clamp(15px, 2.5vh, 20px) clamp(80px, 15vh, 150px);
   padding-inline: clamp(20px, 2vw, 30px);
   color: rgba(var(--clr-font), 1);
+
+  .cards {
+    display: flex;
+    width: 100%;
+    border-radius: 13px;
+    background-color: var(--clr-light);
+    flex-direction: column;
+    align-items: center;
+    padding-block: 0 clamp(40px, 8vh, 50px);
+  }
 
   .card-wrap {
     display: flex;
     padding: 20px;
     gap: 30px;
-    background-color: rgba(var(--clr-font), .3);
-    border-radius: 13px;
 
     .pricing {
       color: rgba(var(--clr-font), 1);
@@ -55,16 +63,24 @@
   width: 100%;
   padding: 20px;
   margin-bottom: clamp(20px, 5vh, 40px);
+
+  h2 {
+    text-transform: capitalize;
+  }
+
+  p {
+    max-width: 230px;
+  }
 }
 
 
 .section-services {
   width: 100%;
-  background-color: rgba(var(--clr-font), .3);
   color: rgba(var(--clr-font), 1);
   display: flex;
   padding-block: clamp(15px, 2.5vh, 20px) clamp(50px, 10vh, 150px);
   flex-direction: column;
+  align-items: center;
 }
 
 .service {
@@ -73,19 +89,20 @@
   gap: 20px;
   padding: 20px;
   justify-content: center;
+  max-width: 680px;
 }
 
 .card-service {
   position: relative;
   padding: 10px;
-  width: 400px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 6px;
+  min-width: 300px;
   max-width: 300px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fff;
+  background-color: var(--clr-light);
   overflow: hidden;
   transition: transform 1.2s ease-in-out;
 }
@@ -122,7 +139,7 @@
 }
 .card-img p span {
   font-size: 1.6rem;
-  font-family: font-2;
+  font-family: font-1;
   opacity: 1;
 }
 

@@ -5,7 +5,7 @@
   min-height: fit-content;
   display: flex;
   justify-content: space-evenly;
-  background-color: var(--clr-dark);
+  background-color: rgba(var(--clr-font), 1);
   color: white;
   text-align: center;
   padding-inline: 10px;

@@ -16,21 +16,20 @@
   
   .form-wrapper {
     display: flex;
-    max-width: fit-content;
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(50px);
-    background-color: #fff;
+    background-color: var(--clr-light);
     border-radius: 13px;
     padding: 20px;
-    border: 1px solid rgb(0 0 0 / 10%);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 6px;
     overflow: hidden;
     transition: 0.2s;
-    color: #34145b;
+    color: rgba(var(--clr-font), 1);
   }
   
   form {
+    min-width: 210px;
     display: flex;
     flex-direction: column;
     padding: 3px;
@@ -46,7 +45,17 @@
   
   .radio {
     display: flex;
+    gap: 4px;
+  }
+  .radio .radio-wrap {
+    padding-left: 2px;
     gap: 2px;
+    display: flex;
+    align-items: center;
+    text-transform: lowercase;
+  }
+  .radio .radio-wrap label {
+    text-transform: lowercase;
   }
   .radio-label-wrapper {
     display: flex;
@@ -57,10 +66,10 @@
     background: transparent;
     border-style: none;
     outline: none;
-    color: #31016f;
+    color: rgba(var(--clr-font), 1);
     padding: 4px;
     transition: 0.4s;
-    border-bottom: #34145b 1px solid;
+    border-bottom: rgba(var(--clr-font), 1) 1px solid;
   }
   .input-text:focus {
     border-style: none;
@@ -70,7 +79,6 @@
   
   .input-wrapper {
     width: 100%;
-    border-bottom: 2px solid #ffffff32;
     display: flex;
     flex-direction: column;
   }
@@ -86,7 +94,7 @@
     align-items: center;
     justify-content: center;
     font-size: 1.6rem;
-    background-color: #34145b;
+    background-color: rgba(var(--clr-font), 1);
     color: #fff;
     font-weight: 500;
   }
